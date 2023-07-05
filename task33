@@ -1,0 +1,9 @@
+n = int(input("Введите количество оценок: "))
+marks = []
+for i in range(n):
+    mark = int(input("Введите оценку: "))
+    marks.append(mark)
+for i in range(n):
+    if marks[i] == max(marks):
+        marks[i] = min(marks)
+print(marks)
