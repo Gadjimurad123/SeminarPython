@@ -1,0 +1,8 @@
+def reverse_numbers(n):
+    if n == 0:
+        return ''
+    chislo = input()
+    return reverse_numbers(n - 1) + f' {chislo}'
+
+n = int(input("Введите число: "))
+print(reverse_numbers(n))
