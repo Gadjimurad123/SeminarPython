@@ -1,0 +1,12 @@
+from random import randint as rd
+
+
+n = int(input("Введите количество элементов: "))
+numbers = list()
+for i in range(n):
+    numbers.append(rd(1, 51))
+print(numbers)
+k = int(input("Введите количество элементов для сдвига: "))
+k = k % n
+for i in range(len(numbers)):
+    
