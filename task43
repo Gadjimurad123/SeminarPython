@@ -1,0 +1,14 @@
+list_1 = [int(i) for i in input("Введите значения: ").split()]
+result = {}
+for i in list_1:
+    if i in result:
+        result[i] += 1
+    else:
+        result[i] = 1
+count = 0 
+for i in result.values():
+    count += i // 2
+print(count)
+
+                            
+
